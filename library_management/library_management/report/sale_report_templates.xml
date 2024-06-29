@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <template id="delivery_report_saleorder_document" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//div[@class='page']" position="inside">
+            <div class="row mt32 mb32">
+                <div class="col-6">
+                    <strong>Customer Reference:</strong>
+                    <span t-esc="doc.customer_reference"/>
+                </div>
+            </div>
+        </xpath>
+        </template>
+
+    </data>
+</odoo>
